@@ -109,6 +109,12 @@
     <Compile Include="frmSanpham.designer.cs">
       <DependentUpon>frmSanpham.cs</DependentUpon>
     </Compile>
+    <Compile Include="thong_new.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="thong_new.Designer.cs">
+      <DependentUpon>thong_new.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="dvtinh.resx">
       <DependentUpon>DVTINH.cs</DependentUpon>
     </EmbeddedResource>
@@ -143,6 +149,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSanpham.resx">
       <DependentUpon>frmSanpham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="thong_new.resx">
+      <DependentUpon>thong_new.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
