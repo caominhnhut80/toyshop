@@ -15,6 +15,7 @@ namespace toyshop
         public khiem1()
         {
             InitializeComponent();
+            /////// abfdhfdjg
         }
     }
 }
