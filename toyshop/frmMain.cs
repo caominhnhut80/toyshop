@@ -17,11 +17,12 @@ namespace toyshop
     public partial class frmMain : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         public nhanvien nv = new nhanvien();
-        
+       
         public frmMain()
         {
             InitializeComponent();
         }
+      
 
         private void frmMain_Load(object sender, EventArgs e)
         {

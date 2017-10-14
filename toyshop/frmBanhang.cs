@@ -3,16 +3,17 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Text;
+using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevExpress.XtraEditors;
 
 namespace toyshop
 {
-    public partial class thong_new : Form
+    public partial class frmBanhang : DevExpress.XtraEditors.XtraForm
     {
-        public thong_new()
+        public frmBanhang()
         {
             InitializeComponent();
         }

@@ -8,6 +8,6 @@ namespace toyshop.Data
 {
     public class ketnoi
     {
-        public static string chuoikn = "server=192.168.0.107;Initial Catalog=toyshop;Persist Security Info=True;User ID=sa;Password=123456";
+        public static string chuoikn = "Data Source=(local);Initial Catalog=toyshop;Persist Security Info=True;User ID=sa;Password=123456";
     }
 }

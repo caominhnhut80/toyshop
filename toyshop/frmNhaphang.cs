@@ -24,6 +24,7 @@ namespace toyshop
             tbmahang.DataSource = sp.LayDanhSach();
             tbmahang.DisplayMember = "tenhang";
             tbmahang.ValueMember = "mahang";
+
             edit_sp.DataSource = sp.LayDanhSach();
             edit_sp.DisplayMember = "tenhang";
             edit_sp.ValueMember = "mahang";
@@ -111,7 +112,16 @@ namespace toyshop
 
         private void edit_sl_EditValueChanged(object sender, EventArgs e)
         {
-            edit_tt.Text = (int.Parse(edit_sl.Text) * long.Parse(edit_gn.Text)).ToString();
+            try
+            {
+                edit_tt.Text = (int.Parse(edit_sl.Text) * long.Parse(edit_gn.Text)).ToString();
+            }
+            catch (Exception)
+            {
+
+                return;
+            }
+           
         }
 
         private void edit_gn_EditValueChanged(object sender, EventArgs e)

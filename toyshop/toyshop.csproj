@@ -71,17 +71,17 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBanhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBanhang.Designer.cs">
+      <DependentUpon>frmBanhang.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="khiem1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="khiem1.Designer.cs">
-      <DependentUpon>khiem1.cs</DependentUpon>
     </Compile>
     <Compile Include="login_form.cs">
       <SubType>Form</SubType>
@@ -115,23 +115,17 @@
     <Compile Include="frmSanpham.designer.cs">
       <DependentUpon>frmSanpham.cs</DependentUpon>
     </Compile>
-    <Compile Include="thong_new.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="thong_new.Designer.cs">
-      <DependentUpon>thong_new.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="dvtinh.resx">
       <DependentUpon>DVTINH.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmBanhang.resx">
+      <DependentUpon>frmBanhang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="khiem1.resx">
-      <DependentUpon>khiem1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login_form.resx">
       <DependentUpon>login_form.cs</DependentUpon>
@@ -158,9 +152,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSanpham.resx">
       <DependentUpon>frmSanpham.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="thong_new.resx">
-      <DependentUpon>thong_new.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

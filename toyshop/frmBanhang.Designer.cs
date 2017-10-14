@@ -1,6 +1,6 @@
 ﻿namespace toyshop
 {
-    partial class thong_new
+    partial class frmBanhang
     {
         /// <summary>
         /// Required designer variable.
@@ -28,35 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBanhang));
             this.SuspendLayout();
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(310, 145);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(337, 129);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "OIS";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // thong_new
+            // frmBanhang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Navy;
-            this.ClientSize = new System.Drawing.Size(693, 390);
-            this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "thong_new";
-            this.Text = "thong_new";
+            this.ClientSize = new System.Drawing.Size(861, 352);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "frmBanhang";
+            this.Text = "BÁN HÀNG";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
     }
 }

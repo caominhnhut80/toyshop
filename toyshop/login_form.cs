@@ -45,9 +45,6 @@ namespace toyshop
             
         }
 
-        private void login_form_Load(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
