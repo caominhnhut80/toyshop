@@ -206,5 +206,8 @@
   <ItemGroup>
     <None Include="images\toyshop.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock-vector-two-gold-dollar-signs-eps-cmyk-organized-by-layers-global-colors-gradients-used-225399136.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

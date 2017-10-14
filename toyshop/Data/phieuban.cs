@@ -31,13 +31,15 @@ namespace toyshop.Data
             }
             return dt;
         }
-        public DataTable getGiabanle(string mahang)
+        
+        public DataTable hien_gb_sl_dvt(string mahang)
         {
             DataTable dt = new DataTable();
             using (SqlConnection con = new SqlConnection(ketnoi.chuoikn))
             {
-                SqlCommand cmd = new SqlCommand("getgiabanle", con);
+                SqlCommand cmd = new SqlCommand("hien_gb_sl_dvt", con);
                 cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@mahang", mahang);
                 DataSet ds = new DataSet();
                 con.Open();
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -47,5 +49,6 @@ namespace toyshop.Data
             }
             return dt;
         }
+        
     }
 }

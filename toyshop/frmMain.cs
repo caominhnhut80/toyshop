@@ -21,6 +21,9 @@ namespace toyshop
         public frmMain()
         {
             InitializeComponent();
+            nv.id = 0; 
+            nv.username = "A";
+            nv.hoten = "B";
         }
       
 
@@ -99,6 +102,13 @@ namespace toyshop
             {
                 XtraMessageBox.Show("Bạn chưa được phân quyền vào tính năng này", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void barButtonItem8_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            frmBanhang fbh = new frmBanhang();
+            fbh.fm = this;
+            fbh.ShowDialog();
         }
     }
 }

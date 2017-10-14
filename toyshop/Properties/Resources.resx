@@ -121,8 +121,11 @@
   <data name="key-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\key-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Very-Basic-Ok-icon (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Very-Basic-Ok-icon (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Very-Basic-Ok-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Very-Basic-Ok-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Office-Customer-Male-Light-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Office-Customer-Male-Light-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Security-Key-Security-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\Security-Key-Security-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -130,31 +133,31 @@
   <data name="User-Executive-Red-icon (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\User-Executive-Red-icon (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Office-Customer-Male-Light-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Office-Customer-Male-Light-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="lock-icon (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\lock-icon (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="User-Executive-Red-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\User-Executive-Red-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="User-Executive-Red-icon (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\User-Executive-Red-icon (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Very-Basic-Ok-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Very-Basic-Ok-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="User-Interface-Login-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\User-Interface-Login-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="lock-icon (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\lock-icon (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Hopstarter-Soft-Scraps-User-Clients" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\Hopstarter-Soft-Scraps-User-Clients.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Very-Basic-Ok-icon (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Very-Basic-Ok-icon (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="User-Interface-Login-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\User-Interface-Login-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="toyshop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\toyshop.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="User-Executive-Red-icon (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\User-Executive-Red-icon (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="User-Executive-Red-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\User-Executive-Red-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lock-icon (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\lock-icon (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stock-vector-two-gold-dollar-signs-eps-cmyk-organized-by-layers-global-colors-gradients-used-225399136" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stock-vector-two-gold-dollar-signs-eps-cmyk-organized-by-layers-global-colors-gradients-used-225399136.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

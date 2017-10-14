@@ -123,6 +123,17 @@ namespace toyshop.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap stock_vector_two_gold_dollar_signs_eps_cmyk_organized_by_layers_global_colors_gradients_used_225399136 {
+            get {
+                object obj = ResourceManager.GetObject("stock-vector-two-gold-dollar-signs-eps-cmyk-organized-by-layers-global-colors-gra" +
+                        "dients-used-225399136", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap toyshop {
             get {
                 object obj = ResourceManager.GetObject("toyshop", resourceCulture);

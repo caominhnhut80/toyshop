@@ -170,6 +170,24 @@ namespace toyshop.Data
             //tra ve du lieu(dang bang)
             return dSet.Tables[0];
         }
+        public DataTable LayDanhSach_deban()
+        { //goi lop ket noi csdl
+            SqlConnection sqlCon = new SqlConnection(ketnoi.chuoikn);
+            //loaddata goi thu tuc, minh da viet tren sql
+            SqlDataAdapter sqlDA = new SqlDataAdapter("SP_LAYDANHSACH_deban", sqlCon);
+
+
+            //khoi tao 1 cai dataset
+            DataSet dSet = new DataSet();
+            //mo cong ket noi
+            sqlCon.Open();
+            //fill du lieu vao datatable
+            sqlDA.Fill(dSet);
+            //dong ket noi lai
+            sqlCon.Close();
+            //tra ve du lieu(dang bang)
+            return dSet.Tables[0];
+        }
         public DataTable LayDanhSach_dvt()
         { //goi lop ket noi csdl
             SqlConnection sqlCon = new SqlConnection(ketnoi.chuoikn);
