@@ -57,6 +57,7 @@
     <Compile Include="Data\donvitinh.cs" />
     <Compile Include="Data\ketnoi.cs" />
     <Compile Include="Data\nhanvien.cs" />
+    <Compile Include="Data\phieuban.cs" />
     <Compile Include="Data\phieunhap.cs" />
     <Compile Include="Data\sanpham.cs" />
     <Compile Include="DVTINH.cs">
