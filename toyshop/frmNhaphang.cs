@@ -15,7 +15,7 @@ namespace toyshop
         public frmNhaphang()
         {
             InitializeComponent();
-            emp.id = 1;
+          
 
         }
         private void load_grid()

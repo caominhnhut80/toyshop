@@ -21,7 +21,7 @@ namespace toyshop
         public frmMain()
         {
             InitializeComponent();
-            nv.id = 0; 
+            nv.id = 1; 
             nv.username = "A";
             nv.hoten = "B";
         }
@@ -80,6 +80,7 @@ namespace toyshop
             {
                 frmNhaphang fsp = new frmNhaphang();
                 fsp.fm = this;
+                fsp.emp = nv;
                 fsp.ShowDialog();
 
             }
@@ -108,6 +109,7 @@ namespace toyshop
         {
             frmBanhang fbh = new frmBanhang();
             fbh.fm = this;
+            fbh.emp = nv;
             fbh.ShowDialog();
         }
     }

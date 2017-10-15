@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBanhang));
             this.sidePanel1 = new DevExpress.XtraEditors.SidePanel();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.rbSi = new System.Windows.Forms.RadioButton();
             this.rbLe = new System.Windows.Forms.RadioButton();
             this.tbKho = new DevExpress.XtraEditors.TextEdit();
@@ -49,6 +51,7 @@
             this.gv1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
+            this.btnChottoa = new DevExpress.XtraEditors.SimpleButton();
             this.sidePanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbKho.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbThanhtien.Properties)).BeginInit();
@@ -64,6 +67,8 @@
             // 
             // sidePanel1
             // 
+            this.sidePanel1.Controls.Add(this.simpleButton2);
+            this.sidePanel1.Controls.Add(this.simpleButton1);
             this.sidePanel1.Controls.Add(this.rbSi);
             this.sidePanel1.Controls.Add(this.rbLe);
             this.sidePanel1.Controls.Add(this.tbKho);
@@ -85,6 +90,24 @@
             this.sidePanel1.TabIndex = 13;
             this.sidePanel1.Text = "sidePanel1";
             // 
+            // simpleButton2
+            // 
+            this.simpleButton2.Location = new System.Drawing.Point(264, 214);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton2.TabIndex = 31;
+            this.simpleButton2.Text = "Xóa";
+            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Location = new System.Drawing.Point(172, 214);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton1.TabIndex = 30;
+            this.simpleButton1.Text = "Cập nhật";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            // 
             // rbSi
             // 
             this.rbSi.AutoSize = true;
@@ -94,6 +117,7 @@
             this.rbSi.TabIndex = 29;
             this.rbSi.Text = "Sỉ";
             this.rbSi.UseVisualStyleBackColor = true;
+            this.rbSi.CheckedChanged += new System.EventHandler(this.rbSi_CheckedChanged);
             // 
             // rbLe
             // 
@@ -106,6 +130,7 @@
             this.rbLe.TabStop = true;
             this.rbLe.Text = "Lẻ";
             this.rbLe.UseVisualStyleBackColor = true;
+            this.rbLe.CheckedChanged += new System.EventHandler(this.rbLe_CheckedChanged);
             // 
             // tbKho
             // 
@@ -140,6 +165,7 @@
             this.tbmahang.Name = "tbmahang";
             this.tbmahang.Size = new System.Drawing.Size(121, 21);
             this.tbmahang.TabIndex = 24;
+            this.tbmahang.SelectedIndexChanged += new System.EventHandler(this.tbmahang_SelectedIndexChanged);
             this.tbmahang.SelectionChangeCommitted += new System.EventHandler(this.tbmahang_SelectionChangeCommitted);
             // 
             // labelControl5
@@ -160,7 +186,7 @@
             this.btLuu.Name = "btLuu";
             this.btLuu.Size = new System.Drawing.Size(75, 23);
             this.btLuu.TabIndex = 19;
-            this.btLuu.Text = "Lưu";
+            this.btLuu.Text = "Thêm";
             this.btLuu.Click += new System.EventHandler(this.btLuu_Click);
             // 
             // labelControl4
@@ -228,20 +254,21 @@
             // 
             // panelControl1
             // 
+            this.panelControl1.Controls.Add(this.btnChottoa);
             this.panelControl1.Controls.Add(this.gv1);
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(958, 352);
+            this.panelControl1.Size = new System.Drawing.Size(1151, 352);
             this.panelControl1.TabIndex = 14;
             // 
             // gv1
             // 
-            this.gv1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gv1.Dock = System.Windows.Forms.DockStyle.Left;
             this.gv1.Location = new System.Drawing.Point(2, 2);
             this.gv1.MainView = this.gridView1;
             this.gv1.Name = "gv1";
-            this.gv1.Size = new System.Drawing.Size(954, 348);
+            this.gv1.Size = new System.Drawing.Size(592, 348);
             this.gv1.TabIndex = 0;
             this.gv1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -250,21 +277,37 @@
             // 
             this.gridView1.GridControl = this.gv1;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsBehavior.Editable = false;
+            this.gridView1.Click += new System.EventHandler(this.gridView1_Click);
             // 
             // panelControl2
             // 
             this.panelControl2.Controls.Add(this.sidePanel1);
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelControl2.Location = new System.Drawing.Point(593, 0);
+            this.panelControl2.Location = new System.Drawing.Point(786, 0);
             this.panelControl2.Name = "panelControl2";
             this.panelControl2.Size = new System.Drawing.Size(365, 352);
             this.panelControl2.TabIndex = 15;
+            // 
+            // btnChottoa
+            // 
+            this.btnChottoa.Appearance.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Bold);
+            this.btnChottoa.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnChottoa.Appearance.Options.UseFont = true;
+            this.btnChottoa.Appearance.Options.UseForeColor = true;
+            this.btnChottoa.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
+            this.btnChottoa.Location = new System.Drawing.Point(600, 13);
+            this.btnChottoa.Name = "btnChottoa";
+            this.btnChottoa.Size = new System.Drawing.Size(180, 80);
+            this.btnChottoa.TabIndex = 24;
+            this.btnChottoa.Text = "TÍNH TIỀN";
+            this.btnChottoa.Click += new System.EventHandler(this.btnChottoa_Click);
             // 
             // frmBanhang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(958, 352);
+            this.ClientSize = new System.Drawing.Size(1151, 352);
             this.Controls.Add(this.panelControl2);
             this.Controls.Add(this.panelControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -310,5 +353,8 @@
         private DevExpress.XtraEditors.LabelControl lbDVT;
         private System.Windows.Forms.RadioButton rbSi;
         private System.Windows.Forms.RadioButton rbLe;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.SimpleButton btnChottoa;
     }
 }
