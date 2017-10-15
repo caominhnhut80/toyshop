@@ -40,13 +40,14 @@ namespace toyshop
             dt = new DataTable();
             // hiện giá bán, số lượng tồn kho, đơn vị tính theo sản phẩm
             //MessageBox.Show(tbmahang.SelectedValue.ToString());
-            //if (tbmahang.Items.Count == 0) {
-            //    anhien(true);
-            //    XtraMessageBox.Show("Đã hết mặt hàng để bán", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //    return;
-            //}
-           
-            
+            if (tbmahang.Items.Count == 0)
+            {
+                anhien(true);
+                XtraMessageBox.Show("Đã hết mặt hàng để bán", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+
             dt = pb.hien_gb_sl_dvt(tbmahang.SelectedValue.ToString());
             tbKho.Text = dt.Rows[0][3].ToString();
             lbDVT.Text = dt.Rows[0][4].ToString();

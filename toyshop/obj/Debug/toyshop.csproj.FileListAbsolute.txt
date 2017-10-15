@@ -296,3 +296,4 @@ E:\chuyen di cntt 2017\cong nghe phan mem\git_toyshop\toyshop\toyshop\bin\Debug\
 E:\chuyen di cntt 2017\cong nghe phan mem\git_toyshop\toyshop\toyshop\bin\Debug\ru\DevExpress.Diagram.v17.1.Core.resources.dll
 E:\chuyen di cntt 2017\cong nghe phan mem\git_toyshop\toyshop\toyshop\obj\Debug\toyshop.report.phieuban.resources
 E:\chuyen di cntt 2017\cong nghe phan mem\git_toyshop\toyshop\toyshop\bin\Debug\Microsoft.AnalysisServices.dll
+E:\chuyen di cntt 2017\cong nghe phan mem\git_toyshop\toyshop\toyshop\obj\Debug\toyshop.csprojResolveAssemblyReference.cache

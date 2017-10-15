@@ -498,13 +498,13 @@
             // 
             // reportAction1
             // 
-            this.reportAction1.Application = null;
-            this.reportAction1.Description = null;
-            this.reportAction1.Name = null;
-            this.reportAction1.OwningCollection = null;
-            this.reportAction1.Path = null;
-            this.reportAction1.ReportServer = null;
-            this.reportAction1.SiteID = "reportAction1";
+            //this.reportAction1.Application = null;
+            //this.reportAction1.Description = null;
+            //this.reportAction1.Name = null;
+            //this.reportAction1.OwningCollection = null;
+            //this.reportAction1.Path = null;
+            //this.reportAction1.ReportServer = null;
+            //this.reportAction1.SiteID = "reportAction1";
             // 
             // GroupFooter1
             // 
