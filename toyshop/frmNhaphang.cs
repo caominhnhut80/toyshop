@@ -1,6 +1,8 @@
 ﻿using DevExpress.XtraBars;
 using DevExpress.XtraEditors;
 using System;
+using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
 using toyshop.Data;
 
@@ -12,6 +14,8 @@ namespace toyshop
         public nhanvien emp=new nhanvien();
         phieunhap pn = new phieunhap();
         sanpham sp = new sanpham();
+        MemoryStream ms;
+        byte[] hinh;
         public frmNhaphang()
         {
             InitializeComponent();
@@ -38,8 +42,14 @@ namespace toyshop
         {
             load_grid();
             // TODO: This line of code loads data into the 'toyshopDataset.sanpham' table. You can move, or remove it, as needed.
-           
-           
+            sp.mahang = tbmahang.SelectedValue.ToString();
+             hinh= sp.getHinh();
+            if (hinh != null)
+            {
+                ms = new MemoryStream(hinh);
+                pictureBox1.Image = Image.FromStream(ms);
+            }
+
 
         }
 
@@ -186,6 +196,17 @@ namespace toyshop
             
         }
 
-      
+        private void tbmahang_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            sp.mahang = tbmahang.SelectedValue.ToString();
+             hinh = sp.getHinh();
+            if (hinh != null)
+            {
+                ms = new MemoryStream(hinh);
+                pictureBox1.Image = Image.FromStream(ms);
+            }
+
+
+        }
     }
 }

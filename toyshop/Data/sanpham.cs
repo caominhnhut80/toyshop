@@ -18,6 +18,7 @@ namespace toyshop.Data
         public long giabanle { get; set; }
         public long giabansi { get; set; }
         public int donvitinh { get; set; }
+        public byte[] hinh { get; set; }
         public DataTable getGiaban()
         {
             DataTable dt = new DataTable();
@@ -98,6 +99,7 @@ namespace toyshop.Data
             sqlCmd.Parameters.AddWithValue("@MAHANG", mahang);
             sqlCmd.Parameters.AddWithValue("@TENHANG", tenhang);
             sqlCmd.Parameters.AddWithValue("@DONVITINH", donvitinh);
+            sqlCmd.Parameters.AddWithValue("@hinh", hinh);
 
             //mo cong kết nối đến sql
             sqlConn.Open();
@@ -223,6 +225,29 @@ namespace toyshop.Data
             sqlCon.Close();
             //tra ve du lieu(dang bang)
             return dSet.Tables[0];
+        }
+        public byte[] getHinh()
+        {
+            SqlConnection sqlCon = new SqlConnection(ketnoi.chuoikn);
+            //loaddata goi thu tuc, minh da viet tren sql
+            SqlCommand cmd = new SqlCommand("getHinhsp", sqlCon);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@mahang", this.mahang);
+            SqlDataAdapter sqlDA = new SqlDataAdapter(cmd);
+
+
+            //khoi tao 1 cai dataset
+            DataSet dSet = new DataSet();
+            //mo cong ket noi
+            sqlCon.Open();
+            //fill du lieu vao datatable
+            sqlDA.Fill(dSet);
+            //dong ket noi lai
+            sqlCon.Close();
+            //tra ve du lieu(dang bang)
+            if (dSet.Tables[0] != null)
+                return (byte[])dSet.Tables[0].Rows[0][0];
+            else return null;
         }
     }
 }

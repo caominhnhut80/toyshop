@@ -3,6 +3,8 @@ using DevExpress.XtraEditors;
 using DevExpress.XtraReports.UI;
 using System;
 using System.Data;
+using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
 using toyshop.Data;
 
@@ -16,6 +18,8 @@ namespace toyshop
         sanpham sp = new sanpham();
         DataTable dt, dtEdit;
         bool blClick = false;
+        MemoryStream ms;
+        byte[] hinh;
         report.phieuban rpPhieuban;
         public frmBanhang()
         {
@@ -82,11 +86,25 @@ namespace toyshop
 
 
         }
+        void loadhinh(int loai)
+        {
+            if (loai==0)
+            sp.mahang = tbmahang.SelectedValue.ToString();
+            else sp.mahang = edit_sp.SelectedValue.ToString();
+            hinh = sp.getHinh();
+            if (hinh != null)
+            {
+                ms = new MemoryStream(hinh);
+                pictureBox1.Image = Image.FromStream(ms);
+            }
+        }
+
         private void frmBanhang_Load(object sender, EventArgs e)
         {
             anhien(false);
             load_grid();
             load_combobox();
+            loadhinh(0);
         }
 
 
@@ -94,6 +112,7 @@ namespace toyshop
         private void tbmahang_SelectionChangeCommitted(object sender, EventArgs e)
         {
             load_combobox();
+            loadhinh(0);
         }
 
         private void tbSL_EditValueChanged(object sender, EventArgs e)
@@ -209,6 +228,7 @@ namespace toyshop
 
 
             load_comboboxEdit();
+            loadhinh(1);
             blClick = false;
         }
 
@@ -337,6 +357,7 @@ namespace toyshop
             if (blClick)
             {
                 edit_giaban.Text = gridView1.GetFocusedRowCellValue("giaban").ToString();
+                loadhinh(1);
             }
         }
 

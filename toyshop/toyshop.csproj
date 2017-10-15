@@ -73,6 +73,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\donvitinh.cs" />
+    <Compile Include="Data\image.cs" />
     <Compile Include="Data\ketnoi.cs" />
     <Compile Include="Data\nhanvien.cs" />
     <Compile Include="Data\phieuban.cs" />

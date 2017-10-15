@@ -50,6 +50,7 @@
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.btnChottoa = new DevExpress.XtraEditors.SimpleButton();
             this.sidePanel2 = new DevExpress.XtraEditors.SidePanel();
+            this.edit_sp = new System.Windows.Forms.ComboBox();
             this.btnXoa = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.btnEditsave = new DevExpress.XtraEditors.SimpleButton();
@@ -61,6 +62,7 @@
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.edit_sl = new DevExpress.XtraEditors.TextEdit();
             this.sidePanel1 = new DevExpress.XtraEditors.SidePanel();
+            this.tbmahang = new System.Windows.Forms.ComboBox();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.btLuu = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
@@ -70,8 +72,7 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.tbSL = new DevExpress.XtraEditors.TextEdit();
-            this.tbmahang = new System.Windows.Forms.ComboBox();
-            this.edit_sp = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.gv1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
@@ -85,6 +86,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbThanhtien.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbGianhap.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbSL.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // gv1
@@ -335,6 +337,7 @@
             // 
             // panelControl1
             // 
+            this.panelControl1.Controls.Add(this.pictureBox1);
             this.panelControl1.Controls.Add(this.btnChottoa);
             this.panelControl1.Controls.Add(this.sidePanel2);
             this.panelControl1.Controls.Add(this.sidePanel1);
@@ -351,9 +354,9 @@
             this.btnChottoa.Appearance.Options.UseFont = true;
             this.btnChottoa.Appearance.Options.UseForeColor = true;
             this.btnChottoa.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
-            this.btnChottoa.Location = new System.Drawing.Point(346, 55);
+            this.btnChottoa.Location = new System.Drawing.Point(469, 46);
             this.btnChottoa.Name = "btnChottoa";
-            this.btnChottoa.Size = new System.Drawing.Size(204, 80);
+            this.btnChottoa.Size = new System.Drawing.Size(169, 80);
             this.btnChottoa.TabIndex = 23;
             this.btnChottoa.Text = "CHỐT TOA NHẬP";
             this.btnChottoa.Click += new System.EventHandler(this.btnChottoa_Click);
@@ -376,6 +379,14 @@
             this.sidePanel2.Size = new System.Drawing.Size(214, 203);
             this.sidePanel2.TabIndex = 13;
             this.sidePanel2.Text = "sidePanel2";
+            // 
+            // edit_sp
+            // 
+            this.edit_sp.FormattingEnabled = true;
+            this.edit_sp.Location = new System.Drawing.Point(81, 34);
+            this.edit_sp.Name = "edit_sp";
+            this.edit_sp.Size = new System.Drawing.Size(121, 21);
+            this.edit_sp.TabIndex = 23;
             // 
             // btnXoa
             // 
@@ -496,6 +507,15 @@
             this.sidePanel1.TabIndex = 12;
             this.sidePanel1.Text = "sidePanel1";
             // 
+            // tbmahang
+            // 
+            this.tbmahang.FormattingEnabled = true;
+            this.tbmahang.Location = new System.Drawing.Point(81, 34);
+            this.tbmahang.Name = "tbmahang";
+            this.tbmahang.Size = new System.Drawing.Size(121, 21);
+            this.tbmahang.TabIndex = 24;
+            this.tbmahang.SelectionChangeCommitted += new System.EventHandler(this.tbmahang_SelectionChangeCommitted);
+            // 
             // labelControl5
             // 
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
@@ -584,21 +604,13 @@
             this.tbSL.EditValueChanged += new System.EventHandler(this.tbSL_EditValueChanged);
             this.tbSL.Click += new System.EventHandler(this.tbSL_Click);
             // 
-            // tbmahang
+            // pictureBox1
             // 
-            this.tbmahang.FormattingEnabled = true;
-            this.tbmahang.Location = new System.Drawing.Point(81, 34);
-            this.tbmahang.Name = "tbmahang";
-            this.tbmahang.Size = new System.Drawing.Size(121, 21);
-            this.tbmahang.TabIndex = 24;
-            // 
-            // edit_sp
-            // 
-            this.edit_sp.FormattingEnabled = true;
-            this.edit_sp.Location = new System.Drawing.Point(81, 34);
-            this.edit_sp.Name = "edit_sp";
-            this.edit_sp.Size = new System.Drawing.Size(121, 21);
-            this.edit_sp.TabIndex = 23;
+            this.pictureBox1.Location = new System.Drawing.Point(225, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(238, 199);
+            this.pictureBox1.TabIndex = 24;
+            this.pictureBox1.TabStop = false;
             // 
             // frmNhaphang
             // 
@@ -627,6 +639,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbThanhtien.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbGianhap.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbSL.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -678,5 +691,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn colthanhtien;
         private System.Windows.Forms.ComboBox edit_sp;
         private System.Windows.Forms.ComboBox tbmahang;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

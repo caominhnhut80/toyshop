@@ -69,6 +69,7 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.tbSL = new DevExpress.XtraEditors.TextEdit();
             this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gv1)).BeginInit();
@@ -85,6 +86,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbThanhtien.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbGiaban.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbSL.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
@@ -132,6 +134,7 @@
             // 
             // panelControl2
             // 
+            this.panelControl2.Controls.Add(this.pictureBox1);
             this.panelControl2.Controls.Add(this.btnShow);
             this.panelControl2.Controls.Add(this.pnEdit);
             this.panelControl2.Controls.Add(this.pnInsert);
@@ -521,6 +524,14 @@
             this.simpleButton6.Text = "IN PHIẾU";
             this.simpleButton6.Click += new System.EventHandler(this.simpleButton6_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(0, 317);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(653, 255);
+            this.pictureBox1.TabIndex = 39;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmBanhang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -551,6 +562,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbThanhtien.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbGiaban.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbSL.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -596,5 +608,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.TextEdit tbSL;
         private DevExpress.XtraEditors.SimpleButton btnShow;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
