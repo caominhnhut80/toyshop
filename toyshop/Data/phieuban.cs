@@ -8,14 +8,14 @@ using System.Threading.Tasks;
 
 namespace toyshop.Data
 {
-    public class phieuban
+    public class Phieuban
     {
-        public string mahang { get; set; }
-        public int soluong { get; set; }
-        public long giaban { get; set; }
-        public long thanhtien { get; set; }
-        public string phieu { get; set; }
-        public DataTable getphieubantam()
+        public string Mahang { get; set; }
+        public int Soluong { get; set; }
+        public long Giaban { get; set; }
+        public long Thanhtien { get; set; }
+        public string Phieu { get; set; }
+        public DataTable Getphieubantam()
         {
             DataTable dt = new DataTable();
             using (SqlConnection con = new SqlConnection(ketnoi.chuoikn))
@@ -31,17 +31,17 @@ namespace toyshop.Data
             }
             return dt;
         }
-        public int addHang()
+        public int AddHang()
         {
 
             using (SqlConnection con = new SqlConnection(ketnoi.chuoikn))
             {
                 SqlCommand cmd = new SqlCommand("luusanphamtam_ban", con);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@mahang", this.mahang);
-                cmd.Parameters.AddWithValue("@soluong", this.soluong);
-                cmd.Parameters.AddWithValue("@giaban", this.giaban);
-                cmd.Parameters.AddWithValue("@thanhtien", this.thanhtien);
+                cmd.Parameters.AddWithValue("@mahang", this.Mahang);
+                cmd.Parameters.AddWithValue("@soluong", this.Soluong);
+                cmd.Parameters.AddWithValue("@giaban", this.Giaban);
+                cmd.Parameters.AddWithValue("@thanhtien", this.Thanhtien);
                 con.Open();
                 try
                 {
@@ -81,13 +81,13 @@ namespace toyshop.Data
             {
                 SqlCommand cmd = new SqlCommand("checkgiasile", con);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@mahang", this.mahang);
-                cmd.Parameters.AddWithValue("@gia", this.giaban);
+                cmd.Parameters.AddWithValue("@mahang", this.Mahang);
+                cmd.Parameters.AddWithValue("@gia", this.Giaban);
 
                 con.Open();
                 kq = cmd.ExecuteScalar();
                 if (kq != null)
-                    if ((long)kq == this.giaban)   //giabanle
+                    if ((long)kq == this.Giaban)   //giabanle
                     {
                         return 0;
                     }
@@ -103,10 +103,10 @@ namespace toyshop.Data
             {
                 SqlCommand cmd = new SqlCommand("capnhatphieubantam", con);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@mahang", this.mahang);
-                cmd.Parameters.AddWithValue("@soluong", this.soluong);
-                cmd.Parameters.AddWithValue("@giaban", this.giaban);
-                cmd.Parameters.AddWithValue("@thanhtien", this.thanhtien);
+                cmd.Parameters.AddWithValue("@mahang", this.Mahang);
+                cmd.Parameters.AddWithValue("@soluong", this.Soluong);
+                cmd.Parameters.AddWithValue("@giaban", this.Giaban);
+                cmd.Parameters.AddWithValue("@thanhtien", this.Thanhtien);
                 con.Open();
                 cmd.ExecuteNonQuery();
             }
@@ -118,7 +118,7 @@ namespace toyshop.Data
             {
                 SqlCommand cmd = new SqlCommand("xoasp_phieubantam", con);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@mahang", this.mahang);
+                cmd.Parameters.AddWithValue("@mahang", this.Mahang);
                 con.Open();
                 cmd.ExecuteNonQuery();
             }
