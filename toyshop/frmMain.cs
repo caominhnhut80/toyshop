@@ -25,7 +25,7 @@ namespace toyshop
         {
            
             InitializeComponent();
-            Thread.Sleep(1000);
+            
             ribbon.Minimized=true;
             nv.id = 1; 
             nv.username = "A";
