@@ -100,14 +100,26 @@
     <Compile Include="frmBanhang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmBanhang.Designer.cs">
-      <DependentUpon>frmBanhang.cs</DependentUpon>
-    </Compile>
+    <Compile Include="frmBanhang.Designer.cs" >
+	<DependentUpon>frmBanhang.cs</DependentUpon>
+	</Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSanpham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSanpham.designer.cs" >
+	<DependentUpon>frmSanpham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmsetGiaban.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsetGiaban.Designer.cs" >
+	<DependentUpon>frmsetGiaban.cs</DependentUpon>
     </Compile>
     <Compile Include="Gioithieu.cs">
       <SubType>Form</SubType>
@@ -134,18 +146,6 @@
     </Compile>
     <Compile Include="frmNhaphang.Designer.cs">
       <DependentUpon>frmNhaphang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmsetGiaban.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmsetGiaban.Designer.cs">
-      <DependentUpon>frmsetGiaban.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmSanpham.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmSanpham.designer.cs">
-      <DependentUpon>frmSanpham.cs</DependentUpon>
     </Compile>
     <Compile Include="report\nhap\rp_allphieunhap.cs">
       <SubType>Component</SubType>
@@ -189,11 +189,17 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmBanhang.resx">
-      <DependentUpon>frmBanhang.cs</DependentUpon>
+    <EmbeddedResource Include="frmBanhang.resx" >
+	<DependentUpon>frmBanhang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSanpham.resx" >
+	<DependentUpon>frmSanpham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsetGiaban.resx" >
+	<DependentUpon>frmsetGiaban.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gioithieu.resx">
       <DependentUpon>Gioithieu.cs</DependentUpon>
@@ -218,12 +224,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="frmsetGiaban.resx">
-      <DependentUpon>frmsetGiaban.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmSanpham.resx">
-      <DependentUpon>frmSanpham.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="report\nhap\rp_allphieunhap.resx">
       <DependentUpon>rp_allphieunhap.cs</DependentUpon>
     </EmbeddedResource>

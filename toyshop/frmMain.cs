@@ -28,7 +28,7 @@ namespace toyshop
             InitializeComponent();
             
             ribbon.Minimized=true;
-            nv.id = 1; 
+          //  nv.id = 1; 
             nv.username = "A";
             nv.hoten = "B";
         }

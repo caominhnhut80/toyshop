@@ -74,6 +74,8 @@ namespace toyshop.report
             //ReportDesignTool rdt = new ReportDesignTool(rp);
             //rdt.ShowDesignerDialog();
         }
+
+       
     }
     public class tam
     {

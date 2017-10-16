@@ -30,6 +30,7 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lbtong = new System.Windows.Forms.Label();
             this.lbphieu = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
@@ -40,7 +41,6 @@
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.lbtong = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
@@ -69,15 +69,25 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Xem REPORT";
             // 
+            // lbtong
+            // 
+            this.lbtong.AutoSize = true;
+            this.lbtong.Enabled = false;
+            this.lbtong.Location = new System.Drawing.Point(197, 87);
+            this.lbtong.Name = "lbtong";
+            this.lbtong.Size = new System.Drawing.Size(13, 13);
+            this.lbtong.TabIndex = 4;
+            this.lbtong.Text = "0";
+            // 
             // lbphieu
             // 
             this.lbphieu.AutoSize = true;
             this.lbphieu.Enabled = false;
             this.lbphieu.Location = new System.Drawing.Point(143, 72);
             this.lbphieu.Name = "lbphieu";
-            this.lbphieu.Size = new System.Drawing.Size(16, 13);
+            this.lbphieu.Size = new System.Drawing.Size(19, 13);
             this.lbphieu.TabIndex = 3;
-            this.lbphieu.Text = "  .";
+            this.lbphieu.Text = "  0";
             // 
             // button2
             // 
@@ -184,16 +194,6 @@
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.Visible = true;
             this.gridColumn5.VisibleIndex = 4;
-            // 
-            // lbtong
-            // 
-            this.lbtong.AutoSize = true;
-            this.lbtong.Enabled = false;
-            this.lbtong.Location = new System.Drawing.Point(197, 87);
-            this.lbtong.Name = "lbtong";
-            this.lbtong.Size = new System.Drawing.Size(16, 13);
-            this.lbtong.TabIndex = 4;
-            this.lbtong.Text = "  .";
             // 
             // frm_RP_Baocao
             // 
