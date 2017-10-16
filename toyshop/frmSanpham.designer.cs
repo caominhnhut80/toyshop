@@ -32,6 +32,7 @@
             this.txtmahang = new System.Windows.Forms.TextBox();
             this.txttenhang = new System.Windows.Forms.TextBox();
             this.groupbox = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.combodvt = new System.Windows.Forms.ComboBox();
@@ -47,21 +48,20 @@
             this.tenhang = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemButtonEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.donvitinh = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colhinh = new DevExpress.XtraGrid.Columns.GridColumn();
             this.label11 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.colhinh = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupbox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.luoitenchngoai)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.luoitench)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtmahang
             // 
             this.txtmahang.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmahang.Location = new System.Drawing.Point(21, 37);
+            this.txtmahang.Location = new System.Drawing.Point(21, 40);
             this.txtmahang.Multiline = true;
             this.txtmahang.Name = "txtmahang";
             this.txtmahang.Size = new System.Drawing.Size(200, 39);
@@ -93,16 +93,24 @@
             this.groupbox.Controls.Add(this.txtmahang);
             this.groupbox.Location = new System.Drawing.Point(0, 268);
             this.groupbox.Name = "groupbox";
-            this.groupbox.Size = new System.Drawing.Size(1012, 214);
+            this.groupbox.Size = new System.Drawing.Size(1164, 214);
             this.groupbox.TabIndex = 24;
             this.groupbox.TabStop = false;
             this.groupbox.Text = "sanpham";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(839, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(212, 200);
+            this.pictureBox1.TabIndex = 27;
+            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Mistral", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(713, 12);
+            this.label1.Location = new System.Drawing.Point(719, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 22);
             this.label1.TabIndex = 26;
@@ -110,11 +118,11 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(714, 44);
+            this.button1.Location = new System.Drawing.Point(714, 40);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(81, 35);
+            this.button1.Size = new System.Drawing.Size(93, 35);
             this.button1.TabIndex = 25;
-            this.button1.Text = "...";
+            this.button1.Text = "Chọn.......";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -122,7 +130,7 @@
             // 
             this.combodvt.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.combodvt.FormattingEnabled = true;
-            this.combodvt.Location = new System.Drawing.Point(494, 45);
+            this.combodvt.Location = new System.Drawing.Point(494, 41);
             this.combodvt.Name = "combodvt";
             this.combodvt.Size = new System.Drawing.Size(214, 35);
             this.combodvt.TabIndex = 24;
@@ -131,7 +139,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Mistral", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(97, 12);
+            this.label2.Location = new System.Drawing.Point(105, 16);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 22);
             this.label2.TabIndex = 22;
@@ -151,7 +159,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Mistral", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(352, 16);
+            this.label6.Location = new System.Drawing.Point(319, 16);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(75, 22);
             this.label6.TabIndex = 19;
@@ -162,7 +170,7 @@
             this.btxoa.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btxoa.Appearance.Options.UseFont = true;
             this.btxoa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btxoa.ImageOptions.Image")));
-            this.btxoa.Location = new System.Drawing.Point(606, 81);
+            this.btxoa.Location = new System.Drawing.Point(525, 82);
             this.btxoa.Name = "btxoa";
             this.btxoa.Size = new System.Drawing.Size(155, 42);
             this.btxoa.TabIndex = 18;
@@ -174,7 +182,7 @@
             this.btsua.Appearance.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btsua.Appearance.Options.UseFont = true;
             this.btsua.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btsua.ImageOptions.Image")));
-            this.btsua.Location = new System.Drawing.Point(319, 81);
+            this.btsua.Location = new System.Drawing.Point(278, 85);
             this.btsua.Name = "btsua";
             this.btsua.Size = new System.Drawing.Size(149, 42);
             this.btsua.TabIndex = 17;
@@ -186,7 +194,7 @@
             this.btthem.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btthem.Appearance.Options.UseFont = true;
             this.btthem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btthem.ImageOptions.Image")));
-            this.btthem.Location = new System.Drawing.Point(42, 82);
+            this.btthem.Location = new System.Drawing.Point(42, 85);
             this.btthem.Name = "btthem";
             this.btthem.Size = new System.Drawing.Size(155, 42);
             this.btthem.TabIndex = 16;
@@ -200,7 +208,7 @@
             this.luoitenchngoai.Name = "luoitenchngoai";
             this.luoitenchngoai.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemButtonEdit1});
-            this.luoitenchngoai.Size = new System.Drawing.Size(991, 219);
+            this.luoitenchngoai.Size = new System.Drawing.Size(1164, 219);
             this.luoitenchngoai.TabIndex = 25;
             this.luoitenchngoai.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.luoitench});
@@ -267,12 +275,20 @@
             this.donvitinh.VisibleIndex = 2;
             this.donvitinh.Width = 299;
             // 
+            // colhinh
+            // 
+            this.colhinh.Caption = "HÌNH ẢNH";
+            this.colhinh.FieldName = "hinh";
+            this.colhinh.Name = "colhinh";
+            this.colhinh.Visible = true;
+            this.colhinh.VisibleIndex = 3;
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Navy;
-            this.label11.Location = new System.Drawing.Point(359, 8);
+            this.label11.Location = new System.Drawing.Point(433, 8);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(260, 32);
             this.label11.TabIndex = 26;
@@ -281,22 +297,6 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(801, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
-            this.pictureBox1.TabIndex = 27;
-            this.pictureBox1.TabStop = false;
-            // 
-            // colhinh
-            // 
-            this.colhinh.Caption = "HÌNH ẢNH";
-            this.colhinh.FieldName = "hinh";
-            this.colhinh.Name = "colhinh";
-            this.colhinh.Visible = true;
-            this.colhinh.VisibleIndex = 3;
             // 
             // frmSanpham
             // 
@@ -313,10 +313,10 @@
             this.Load += new System.EventHandler(this.frmSanpham_Load);
             this.groupbox.ResumeLayout(false);
             this.groupbox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.luoitenchngoai)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.luoitench)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

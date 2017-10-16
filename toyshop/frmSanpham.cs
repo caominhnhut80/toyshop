@@ -77,11 +77,12 @@ namespace toyshop
                 MessageBox.Show("Đơn vị tính không được bỏ trống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            
+            if (filename != "") CH.hinh = im.ReadFile(filename);
             CH.Sua();
             //TL.ThemMoi();
             MessageBox.Show(" Đã sửa thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             load_database();
+            Load_DuLieu_tuluoilentext();
         }
 
         private void btxoa_Click_1(object sender, EventArgs e)
@@ -94,6 +95,7 @@ namespace toyshop
             MessageBox.Show(" Đã xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             //  load();
             load_database();
+            
         }
         public void load_database()
         {
@@ -115,6 +117,7 @@ namespace toyshop
             mahangcu = luoitench.GetFocusedRowCellValue(mahang).ToString();
             txttenhang.Text = luoitench.GetFocusedRowCellValue(tenhang).ToString();
             combodvt.Text = luoitench.GetFocusedRowCellValue("donvitinh").ToString();
+         
             if (luoitench.GetFocusedRowCellValue("hinh") != null)
             {
                 try
@@ -122,14 +125,16 @@ namespace toyshop
                     ms = new MemoryStream((byte[])luoitench.GetFocusedRowCellValue("hinh"));
                 }
                 catch (Exception ex)
-                {
-
+              {
+                    pictureBox1.Image = null;
+                    return;
                     throw ex;
-                }
+               }
+
                 pictureBox1.Image = null;
                 pictureBox1.Image = Image.FromStream(ms);
             }
-            
+
             // txtdonvitinh.Text = luoitench.GetFocusedRowCellValue(donvitinh).ToString();
 
 
