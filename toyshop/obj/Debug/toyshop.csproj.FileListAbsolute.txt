@@ -204,3 +204,5 @@ E:\chuyen di cntt 2017\cong nghe phan mem\git_toyshop\toyshop\toyshop\obj\Debug\
 E:\chuyen di cntt 2017\cong nghe phan mem\git_toyshop\toyshop\toyshop\obj\Debug\toyshop.report.xuat.rp_banhangall.resources
 E:\chuyen di cntt 2017\cong nghe phan mem\git_toyshop\toyshop\toyshop\obj\Debug\toyshop.report.frm_rp_bc_ban.resources
 E:\chuyen di cntt 2017\cong nghe phan mem\git_toyshop\toyshop\toyshop\obj\Debug\toyshop.report.xuat.rp_chitiet_pb.resources
+E:\chuyen di cntt 2017\cong nghe phan mem\git_toyshop\toyshop\toyshop\obj\Debug\Interop.WMPLib.dll
+E:\chuyen di cntt 2017\cong nghe phan mem\git_toyshop\toyshop\toyshop\obj\Debug\toyshop.csproj.ResolveComReference.cache

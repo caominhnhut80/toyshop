@@ -1,5 +1,6 @@
 ﻿using DevExpress.XtraEditors;
 using System;
+using System.Media;
 using System.Threading;
 using System.Windows.Forms;
 using toyshop.Data;
@@ -12,8 +13,11 @@ namespace toyshop
         public nhanvien nv = new nhanvien();
         public login_form()
         {
+
+           
             InitializeComponent();
             Thread.Sleep(10000);
+
         }
 
         private void label2_Click(object sender, EventArgs e)

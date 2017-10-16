@@ -1,5 +1,6 @@
 ﻿using DevExpress.XtraSplashScreen;
 using System;
+using System.Threading;
 
 namespace toyshop
 {
@@ -8,7 +9,11 @@ namespace toyshop
         public Gioithieu()
         {
             InitializeComponent();
-           
+            WMPLib.WindowsMediaPlayer Player;
+            Player = new WMPLib.WindowsMediaPlayer();
+
+            Player.URL = @"E:\chuyen di cntt 2017\cong nghe phan mem\git_toyshop\toyshop\toyshop\music\DongMauLH.mp3";
+            Player.controls.play();
         }
 
         #region Overrides
