@@ -299,3 +299,5 @@ E:\chuyen di cntt 2017\cong nghe phan mem\git_toyshop\toyshop\toyshop\bin\Debug\
 E:\chuyen di cntt 2017\cong nghe phan mem\git_toyshop\toyshop\toyshop\obj\Debug\toyshop.csprojResolveAssemblyReference.cache
 E:\chuyen di cntt 2017\cong nghe phan mem\git_toyshop\toyshop\toyshop\obj\Debug\toyshop.Gioithieu.resources
 E:\chuyen di cntt 2017\cong nghe phan mem\git_toyshop\toyshop\toyshop\bin\Debug\DevExpress.BonusSkins.v17.1.dll
+E:\chuyen di cntt 2017\cong nghe phan mem\git_toyshop\toyshop\toyshop\obj\Debug\toyshop.report.frm_RP_Baocao.resources
+E:\chuyen di cntt 2017\cong nghe phan mem\git_toyshop\toyshop\toyshop\obj\Debug\toyshop.report.rp_bc_all_phieunhap.resources
