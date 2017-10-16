@@ -25,7 +25,6 @@ namespace toyshop.Data
             using (SqlConnection con = new SqlConnection(ketnoi.chuoikn))
             {
                 SqlCommand cmd = new SqlCommand("get_giaban", con);
-               
                 cmd.CommandType = CommandType.StoredProcedure;
                 DataSet ds = new DataSet();
                 con.Open();

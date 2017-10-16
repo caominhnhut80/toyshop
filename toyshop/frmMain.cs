@@ -12,6 +12,7 @@ using toyshop.Data;
 using DevExpress.XtraEditors;
 using DevExpress.XtraSplashScreen;
 using System.Threading;
+using toyshop.report;
 
 namespace toyshop
 {
@@ -117,6 +118,13 @@ namespace toyshop
             fbh.fm = this;
             fbh.emp = nv;
             fbh.ShowDialog();
+        }
+
+        private void barButtonItem10_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            frm_RP_Baocao fbh = new frm_RP_Baocao();
+            fbh.fm = this;
+            fbh.Show();
         }
     }
 }

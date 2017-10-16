@@ -397,11 +397,6 @@ namespace toyshop
 
         }
 
-        private void simpleButton3_Click_1(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void simpleButton3_Click(object sender, EventArgs e)
         {
             

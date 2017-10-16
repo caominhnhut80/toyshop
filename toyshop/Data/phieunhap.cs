@@ -9,7 +9,7 @@ namespace toyshop.Data
         public int soluong { get; set; }
         public long gianhap { get; set; }
         public long thanhtien { get; set; }
-        public string phieu { get; set; }
+        public int phieu { get; set; }
         public DataTable getphieunhaptam()
         {
             DataTable dt = new DataTable();
@@ -20,7 +20,7 @@ namespace toyshop.Data
                 DataSet ds = new DataSet();
                 con.Open();
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
-                da.Fill(ds);
+                da.Fill(ds,"a");
                 dt = ds.Tables[0];
                 
                 
@@ -91,6 +91,40 @@ namespace toyshop.Data
             }
             return 1;
         }
-       
+        public DataTable get_report_all_pn()
+        {
+            DataTable dt = new DataTable();
+            using (SqlConnection con = new SqlConnection(ketnoi.chuoikn))
+            {
+                SqlCommand cmd = new SqlCommand("REPORT_PHIEUNHAPHANG", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                DataSet ds = new DataSet();
+                con.Open();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(ds);
+                dt = ds.Tables[0];
+
+
+            }
+            return dt;
+        }
+        public DataSet get_report_ct_pn()
+        {
+            DataSet ds = new DataSet();
+            using (SqlConnection con = new SqlConnection(ketnoi.chuoikn))
+            {
+                SqlCommand cmd = new SqlCommand("REPORT_CHITIETPHIEUNHAP", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@phieu", this.phieu);
+                
+                con.Open();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(ds);
+               
+
+
+            }
+            return ds;
+        }
     }
 }

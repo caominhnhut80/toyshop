@@ -34,7 +34,6 @@
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.btnChottoa = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnShow = new DevExpress.XtraEditors.SimpleButton();
             this.pnEdit = new System.Windows.Forms.GroupBox();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
@@ -70,16 +69,13 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.tbSL = new DevExpress.XtraEditors.TextEdit();
             this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gv1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnEdit.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.edit_kho.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edit_thanhtien.Properties)).BeginInit();
@@ -90,8 +86,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbThanhtien.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbGiaban.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbSL.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
@@ -100,7 +95,7 @@
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(1354, 515);
+            this.panelControl1.Size = new System.Drawing.Size(1253, 577);
             this.panelControl1.TabIndex = 14;
             // 
             // gv1
@@ -109,7 +104,7 @@
             this.gv1.Location = new System.Drawing.Point(2, 2);
             this.gv1.MainView = this.gridView1;
             this.gv1.Name = "gv1";
-            this.gv1.Size = new System.Drawing.Size(645, 511);
+            this.gv1.Size = new System.Drawing.Size(592, 573);
             this.gv1.TabIndex = 0;
             this.gv1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -130,7 +125,7 @@
             this.btnChottoa.Appearance.Options.UseTextOptions = true;
             this.btnChottoa.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
             this.btnChottoa.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
-            this.btnChottoa.Location = new System.Drawing.Point(83, 2);
+            this.btnChottoa.Location = new System.Drawing.Point(124, 2);
             this.btnChottoa.Name = "btnChottoa";
             this.btnChottoa.Size = new System.Drawing.Size(152, 42);
             this.btnChottoa.TabIndex = 24;
@@ -139,9 +134,6 @@
             // 
             // panelControl2
             // 
-            this.panelControl2.Controls.Add(this.pictureBox3);
-            this.panelControl2.Controls.Add(this.pictureBox2);
-            this.panelControl2.Controls.Add(this.simpleButton3);
             this.panelControl2.Controls.Add(this.pictureBox1);
             this.panelControl2.Controls.Add(this.btnShow);
             this.panelControl2.Controls.Add(this.pnEdit);
@@ -149,24 +141,16 @@
             this.panelControl2.Controls.Add(this.simpleButton6);
             this.panelControl2.Controls.Add(this.btnChottoa);
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelControl2.Location = new System.Drawing.Point(705, 0);
+            this.panelControl2.Location = new System.Drawing.Point(600, 0);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(649, 515);
+            this.panelControl2.Size = new System.Drawing.Size(653, 577);
             this.panelControl2.TabIndex = 15;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(242, 316);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(215, 199);
-            this.pictureBox1.TabIndex = 39;
-            this.pictureBox1.TabStop = false;
             // 
             // btnShow
             // 
             this.btnShow.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.btnShow.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnShow.ImageOptions.Image")));
-            this.btnShow.Location = new System.Drawing.Point(315, 154);
+            this.btnShow.Location = new System.Drawing.Point(291, 154);
             this.btnShow.Name = "btnShow";
             this.btnShow.Size = new System.Drawing.Size(38, 33);
             this.btnShow.TabIndex = 38;
@@ -191,9 +175,9 @@
             this.pnEdit.Controls.Add(this.labelControl12);
             this.pnEdit.Controls.Add(this.labelControl13);
             this.pnEdit.Controls.Add(this.edit_sl);
-            this.pnEdit.Location = new System.Drawing.Point(355, 50);
+            this.pnEdit.Location = new System.Drawing.Point(342, 50);
             this.pnEdit.Name = "pnEdit";
-            this.pnEdit.Size = new System.Drawing.Size(296, 259);
+            this.pnEdit.Size = new System.Drawing.Size(299, 259);
             this.pnEdit.TabIndex = 26;
             this.pnEdit.TabStop = false;
             // 
@@ -248,7 +232,7 @@
             // 
             this.edit_kho.EditValue = "0";
             this.edit_kho.Enabled = false;
-            this.edit_kho.Location = new System.Drawing.Point(238, 231);
+            this.edit_kho.Location = new System.Drawing.Point(241, 231);
             this.edit_kho.Name = "edit_kho";
             this.edit_kho.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.edit_kho.Size = new System.Drawing.Size(51, 20);
@@ -256,7 +240,7 @@
             // 
             // labelControl7
             // 
-            this.labelControl7.Location = new System.Drawing.Point(191, 234);
+            this.labelControl7.Location = new System.Drawing.Point(197, 234);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(38, 13);
             this.labelControl7.TabIndex = 42;
@@ -373,7 +357,7 @@
             this.pnInsert.Controls.Add(this.labelControl2);
             this.pnInsert.Controls.Add(this.labelControl1);
             this.pnInsert.Controls.Add(this.tbSL);
-            this.pnInsert.Location = new System.Drawing.Point(37, 50);
+            this.pnInsert.Location = new System.Drawing.Point(0, 50);
             this.pnInsert.Name = "pnInsert";
             this.pnInsert.Size = new System.Drawing.Size(276, 261);
             this.pnInsert.TabIndex = 1;
@@ -407,7 +391,7 @@
             // 
             this.tbKho.EditValue = "0";
             this.tbKho.Enabled = false;
-            this.tbKho.Location = new System.Drawing.Point(218, 235);
+            this.tbKho.Location = new System.Drawing.Point(222, 235);
             this.tbKho.Name = "tbKho";
             this.tbKho.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.tbKho.Size = new System.Drawing.Size(51, 20);
@@ -415,7 +399,7 @@
             // 
             // labelControl6
             // 
-            this.labelControl6.Location = new System.Drawing.Point(173, 238);
+            this.labelControl6.Location = new System.Drawing.Point(178, 238);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(38, 13);
             this.labelControl6.TabIndex = 41;
@@ -533,63 +517,32 @@
             this.simpleButton6.Appearance.Options.UseTextOptions = true;
             this.simpleButton6.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
             this.simpleButton6.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
-            this.simpleButton6.Location = new System.Drawing.Point(431, 3);
+            this.simpleButton6.Location = new System.Drawing.Point(282, 3);
             this.simpleButton6.Name = "simpleButton6";
-            this.simpleButton6.Size = new System.Drawing.Size(152, 41);
+            this.simpleButton6.Size = new System.Drawing.Size(152, 39);
             this.simpleButton6.TabIndex = 25;
             this.simpleButton6.Text = "IN PHIẾU";
             this.simpleButton6.Click += new System.EventHandler(this.simpleButton6_Click);
             // 
-            // simpleButton3
+            // pictureBox1
             // 
-            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Bold);
-            this.simpleButton3.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.simpleButton3.Appearance.Options.UseFont = true;
-            this.simpleButton3.Appearance.Options.UseForeColor = true;
-            this.simpleButton3.Appearance.Options.UseTextOptions = true;
-            this.simpleButton3.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.simpleButton3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
-            this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
-            this.simpleButton3.Location = new System.Drawing.Point(255, 5);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(152, 39);
-            this.simpleButton3.TabIndex = 40;
-            this.simpleButton3.Text = "THOÁT";
-            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click_1);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(36, 315);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(196, 199);
-            this.pictureBox2.TabIndex = 41;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(452, 315);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(206, 200);
-            this.pictureBox3.TabIndex = 42;
-            this.pictureBox3.TabStop = false;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 317);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(653, 255);
+            this.pictureBox1.TabIndex = 39;
+            this.pictureBox1.TabStop = false;
             // 
             // frmBanhang
             // 
-            this.Appearance.BackColor = System.Drawing.Color.White;
-            this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1354, 515);
-            this.ControlBox = false;
+            this.ClientSize = new System.Drawing.Size(1253, 577);
             this.Controls.Add(this.panelControl2);
             this.Controls.Add(this.panelControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "frmBanhang";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "BÁN HÀNG";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmBanhang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
@@ -597,7 +550,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnEdit.ResumeLayout(false);
             this.pnEdit.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.edit_kho.Properties)).EndInit();
@@ -610,8 +562,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbThanhtien.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbGiaban.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbSL.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -658,8 +609,5 @@
         private DevExpress.XtraEditors.TextEdit tbSL;
         private DevExpress.XtraEditors.SimpleButton btnShow;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

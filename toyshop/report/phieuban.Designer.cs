@@ -498,13 +498,13 @@
             // 
             // reportAction1
             // 
-            this.reportAction1.Application = null;
-            this.reportAction1.Description = null;
-            this.reportAction1.Name = null;
-            this.reportAction1.OwningCollection = null;
-            this.reportAction1.Path = null;
-            this.reportAction1.ReportServer = null;
-            this.reportAction1.SiteID = "reportAction1";
+            //this.reportAction1.Application = null;
+            //this.reportAction1.Description = null;
+            //this.reportAction1.Name = null;
+            //this.reportAction1.OwningCollection = null;
+            //this.reportAction1.Path = null;
+            //this.reportAction1.ReportServer = null;
+            //this.reportAction1.SiteID = "reportAction1";
             // 
             // GroupFooter1
             // 
@@ -619,7 +619,7 @@
         private DevExpress.XtraReports.UI.XRLabel xrLabel4;
         private DevExpress.XtraReports.UI.XRPageInfo xrPageInfo3;
         private DevExpress.XtraReports.UI.XRLabel xrLabel2;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel3;
+        public DevExpress.XtraReports.UI.XRLabel xrLabel3;
         private Microsoft.AnalysisServices.ReportAction reportAction1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private DevExpress.XtraReports.UI.GroupFooterBand GroupFooter1;
