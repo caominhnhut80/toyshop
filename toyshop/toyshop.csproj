@@ -100,9 +100,9 @@
     <Compile Include="frmBanhang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmBanhang.Designer.cs" >
-	<DependentUpon>frmBanhang.cs</DependentUpon>
-	</Compile>
+    <Compile Include="frmBanhang.Designer.cs">
+      <DependentUpon>frmBanhang.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,14 +112,14 @@
     <Compile Include="frmSanpham.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmSanpham.designer.cs" >
-	<DependentUpon>frmSanpham.cs</DependentUpon>
+    <Compile Include="frmSanpham.designer.cs">
+      <DependentUpon>frmSanpham.cs</DependentUpon>
     </Compile>
     <Compile Include="frmsetGiaban.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmsetGiaban.Designer.cs" >
-	<DependentUpon>frmsetGiaban.cs</DependentUpon>
+    <Compile Include="frmsetGiaban.Designer.cs">
+      <DependentUpon>frmsetGiaban.cs</DependentUpon>
     </Compile>
     <Compile Include="Gioithieu.cs">
       <SubType>Form</SubType>
@@ -146,6 +146,12 @@
     </Compile>
     <Compile Include="frmNhaphang.Designer.cs">
       <DependentUpon>frmNhaphang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="report\frm_rp_bc_ban.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report\frm_rp_bc_ban.Designer.cs">
+      <DependentUpon>frm_rp_bc_ban.cs</DependentUpon>
     </Compile>
     <Compile Include="report\nhap\rp_allphieunhap.cs">
       <SubType>Component</SubType>
@@ -183,23 +189,35 @@
     <Compile Include="report\rp_bc_ct_pn.Designer.cs">
       <DependentUpon>rp_bc_ct_pn.cs</DependentUpon>
     </Compile>
+    <Compile Include="report\xuat\rp_banhangall.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="report\xuat\rp_banhangall.Designer.cs">
+      <DependentUpon>rp_banhangall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="report\xuat\rp_chitiet_pb.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="report\xuat\rp_chitiet_pb.Designer.cs">
+      <DependentUpon>rp_chitiet_pb.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="dvtinh.resx">
       <DependentUpon>DVTINH.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmBanhang.resx" >
-	<DependentUpon>frmBanhang.cs</DependentUpon>
+    <EmbeddedResource Include="frmBanhang.resx">
+      <DependentUpon>frmBanhang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSanpham.resx" >
-	<DependentUpon>frmSanpham.cs</DependentUpon>
+    <EmbeddedResource Include="frmSanpham.resx">
+      <DependentUpon>frmSanpham.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmsetGiaban.resx" >
-	<DependentUpon>frmsetGiaban.cs</DependentUpon>
+    <EmbeddedResource Include="frmsetGiaban.resx">
+      <DependentUpon>frmsetGiaban.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gioithieu.resx">
       <DependentUpon>Gioithieu.cs</DependentUpon>
@@ -224,6 +242,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="report\frm_rp_bc_ban.resx">
+      <DependentUpon>frm_rp_bc_ban.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="report\nhap\rp_allphieunhap.resx">
       <DependentUpon>rp_allphieunhap.cs</DependentUpon>
     </EmbeddedResource>
@@ -241,6 +262,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="report\rp_bc_ct_pn.resx">
       <DependentUpon>rp_bc_ct_pn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report\xuat\rp_banhangall.resx">
+      <DependentUpon>rp_banhangall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report\xuat\rp_chitiet_pb.resx">
+      <DependentUpon>rp_chitiet_pb.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>

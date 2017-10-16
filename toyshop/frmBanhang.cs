@@ -208,6 +208,7 @@ namespace toyshop
 
         private void gridView1_Click(object sender, EventArgs e)
         {
+            if (gridView1.RowCount == 0) return;
             anhien(true);
             blClick = true;
             edit_kho.Text = tbKho.Text;

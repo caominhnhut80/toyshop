@@ -44,6 +44,10 @@ namespace toyshop
                return;
            }
            if (filename!="") CH.hinh = im.ReadFile(filename);
+           else
+            {
+                CH.hinh = null;
+            }
             //goi ham xu ly
            CH.ThemMoisp();
             //TL.ThemMoi();

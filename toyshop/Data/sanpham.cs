@@ -99,6 +99,7 @@ namespace toyshop.Data
             sqlCmd.Parameters.AddWithValue("@MAHANG", mahang);
             sqlCmd.Parameters.AddWithValue("@TENHANG", tenhang);
             sqlCmd.Parameters.AddWithValue("@DONVITINH", donvitinh);
+            if (hinh!=null)
             sqlCmd.Parameters.AddWithValue("@hinh", hinh);
 
             //mo cong kết nối đến sql

@@ -13,26 +13,28 @@ using DevExpress.XtraEditors;
 using DevExpress.XtraSplashScreen;
 using System.Threading;
 using toyshop.report;
+using toyshop.report.xuat;
+using DevExpress.XtraReports.UI;
 
 namespace toyshop
 {
-   
+
     public partial class frmMain : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-        
+
         public nhanvien nv = new nhanvien();
-       
+
         public frmMain()
         {
-           
+
             InitializeComponent();
-            
-            ribbon.Minimized=true;
-          //  nv.id = 1; 
+
+            ribbon.Minimized = true;
+           // nv.id = 1;
             nv.username = "A";
             nv.hoten = "B";
         }
-      
+
 
         private void frmMain_Load(object sender, EventArgs e)
         {
@@ -49,10 +51,10 @@ namespace toyshop
         {
             if (nv.id != -1)
             {
-                DVTINH dvt  = new DVTINH();
+                DVTINH dvt = new DVTINH();
                 dvt.fm = this;
                 dvt.ShowDialog();
-                
+
             }
         }
 
@@ -69,13 +71,14 @@ namespace toyshop
 
         private void barButtonItem5_ItemClick(object sender, ItemClickEventArgs e)
         {
-            if (nv.quyen==0||nv.quyen==1)
+            if (nv.quyen == 0 || nv.quyen == 1)
             {
                 frmNhanvien fsp = new frmNhanvien();
                 fsp.fm = this;
                 fsp.ShowDialog();
 
-            } else
+            }
+            else
             {
                 XtraMessageBox.Show("Bạn chưa được phân quyền vào tính năng này", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -123,6 +126,32 @@ namespace toyshop
         private void barButtonItem10_ItemClick(object sender, ItemClickEventArgs e)
         {
             frm_RP_Baocao fbh = new frm_RP_Baocao();
+            fbh.fm = this;
+            fbh.Show();
+        }
+
+        private void barButtonItem11_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            //rp_banhangall rp = new rp_banhangall();
+            //rp.ShowPreview();
+            frm_rp_bc_ban fbh = new frm_rp_bc_ban();
+            fbh.fm = this;
+            fbh.Show();
+        }
+
+        private void barButtonItem2_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            nv.id = -1;
+            login_form lgf = new login_form();
+            lgf.fm = this;
+            lgf.ShowDialog();
+            lbUser.Caption = "Người dùng: " + nv.username + " - " + nv.hoten;
+
+        }
+
+        private void barButtonItem9_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            frm_rp_bc_ban fbh = new frm_rp_bc_ban();
             fbh.fm = this;
             fbh.Show();
         }

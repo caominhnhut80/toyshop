@@ -14,6 +14,7 @@ namespace toyshop.Data
         //Open file in to a filestream and read data in a byte array.
         public byte[] ReadFile(string sPath)
         {
+            if (sPath == null) return null;
             //Initialize byte array with a null value initially.
             byte[] data = null;
 

@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemButtonEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSanpham));
+            this.repositoryItemButtonEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.txtmahang = new System.Windows.Forms.TextBox();
             this.txttenhang = new System.Windows.Forms.TextBox();
             this.groupbox = new System.Windows.Forms.GroupBox();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -51,13 +52,19 @@
             this.colhinh = new DevExpress.XtraGrid.Columns.GridColumn();
             this.label11 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit1)).BeginInit();
             this.groupbox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.luoitenchngoai)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.luoitench)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(repositoryItemButtonEdit2)).BeginInit();
             this.SuspendLayout();
+            // 
+            // repositoryItemButtonEdit1
+            // 
+            this.repositoryItemButtonEdit1.AutoHeight = false;
+            this.repositoryItemButtonEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.repositoryItemButtonEdit1.Name = "repositoryItemButtonEdit1";
             // 
             // txtmahang
             // 
@@ -99,6 +106,19 @@
             this.groupbox.TabIndex = 24;
             this.groupbox.TabStop = false;
             this.groupbox.Text = "sanpham";
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton1.Appearance.Options.UseFont = true;
+            this.simpleButton1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.simpleButton1.Location = new System.Drawing.Point(761, 111);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(149, 42);
+            this.simpleButton1.TabIndex = 28;
+            this.simpleButton1.Text = "THOÁT";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // pictureBox1
             // 
@@ -222,6 +242,7 @@
             this.colhinh});
             this.luoitench.GridControl = this.luoitenchngoai;
             this.luoitench.Name = "luoitench";
+            this.luoitench.OptionsBehavior.Editable = false;
             this.luoitench.OptionsView.ShowAutoFilterRow = true;
             this.luoitench.OptionsView.ShowGroupPanel = false;
             this.luoitench.Click += new System.EventHandler(this.luoitench_Click);
@@ -245,11 +266,7 @@
             this.tenhang.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.tenhang.AppearanceHeader.Options.UseFont = true;
             this.tenhang.Caption = "TÊN HÀNG";
-            repositoryItemButtonEdit2.AutoHeight = false;
-            repositoryItemButtonEdit2.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            repositoryItemButtonEdit2.Name = "repositoryItemButtonEdit1";
-            this.tenhang.ColumnEdit = repositoryItemButtonEdit2;
+            this.tenhang.ColumnEdit = this.repositoryItemButtonEdit1;
             this.tenhang.FieldName = "tenhang";
             this.tenhang.Name = "tenhang";
             this.tenhang.OptionsColumn.AllowEdit = false;
@@ -263,7 +280,7 @@
             this.donvitinh.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.donvitinh.AppearanceHeader.Options.UseFont = true;
             this.donvitinh.Caption = "ĐƠN VỊ TÍNH";
-            this.donvitinh.ColumnEdit = repositoryItemButtonEdit2;
+            this.donvitinh.ColumnEdit = this.repositoryItemButtonEdit1;
             this.donvitinh.FieldName = "donvitinh";
             this.donvitinh.Name = "donvitinh";
             this.donvitinh.OptionsColumn.AllowEdit = false;
@@ -297,19 +314,6 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // simpleButton1
-            // 
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(761, 111);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(149, 42);
-            this.simpleButton1.TabIndex = 28;
-            this.simpleButton1.Text = "THOÁT";
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
-            // 
             // frmSanpham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -328,12 +332,12 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Load += new System.EventHandler(this.frmSanpham_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit1)).EndInit();
             this.groupbox.ResumeLayout(false);
             this.groupbox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.luoitenchngoai)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.luoitench)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(repositoryItemButtonEdit2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -363,6 +367,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private DevExpress.XtraGrid.Columns.GridColumn colhinh;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemButtonEdit1;
     }
 }
 

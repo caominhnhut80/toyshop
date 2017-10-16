@@ -14,7 +14,7 @@ namespace toyshop.Data
         public int Soluong { get; set; }
         public long Giaban { get; set; }
         public long Thanhtien { get; set; }
-        public string Phieu { get; set; }
+        public int Phieu { get; set; }
         public DataTable Getphieubantam()
         {
             DataTable dt = new DataTable();
@@ -135,6 +135,41 @@ namespace toyshop.Data
                 cmd.ExecuteNonQuery();
             }
             return 1;
+        }
+        public DataTable get_report_all_pb()
+        {
+            DataTable dt = new DataTable();
+            using (SqlConnection con = new SqlConnection(ketnoi.chuoikn))
+            {
+                SqlCommand cmd = new SqlCommand("REPORT_PHIEUBANHANG", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                DataSet ds = new DataSet();
+                con.Open();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(ds);
+                dt = ds.Tables[0];
+
+
+            }
+            return dt;
+        }
+        public DataSet get_report_ct_pb()
+        {
+            DataSet ds = new DataSet();
+            using (SqlConnection con = new SqlConnection(ketnoi.chuoikn))
+            {
+                SqlCommand cmd = new SqlCommand("REPORT_CHITIETPHIEUBAN", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@phieu", this.Phieu);
+
+                con.Open();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(ds);
+
+
+
+            }
+            return ds;
         }
     }
 }
