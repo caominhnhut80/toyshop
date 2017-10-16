@@ -297,6 +297,7 @@ E:\chuyen di cntt 2017\cong nghe phan mem\git_toyshop\toyshop\toyshop\bin\Debug\
 E:\chuyen di cntt 2017\cong nghe phan mem\git_toyshop\toyshop\toyshop\obj\Debug\toyshop.report.phieuban.resources
 E:\chuyen di cntt 2017\cong nghe phan mem\git_toyshop\toyshop\toyshop\bin\Debug\Microsoft.AnalysisServices.dll
 E:\chuyen di cntt 2017\cong nghe phan mem\git_toyshop\toyshop\toyshop\obj\Debug\toyshop.csprojResolveAssemblyReference.cache
+<<<<<<< HEAD
 E:\git_toyshop\toyshop\toyshop\toyshop\bin\Debug\toyshop.exe.config
 E:\git_toyshop\toyshop\toyshop\toyshop\bin\Debug\toyshop.exe
 E:\git_toyshop\toyshop\toyshop\toyshop\bin\Debug\toyshop.pdb
@@ -493,3 +494,13 @@ E:\git_toyshop\toyshop\toyshop\toyshop\obj\Debug\toyshop.exe.licenses
 E:\git_toyshop\toyshop\toyshop\toyshop\obj\Debug\toyshop.csproj.CoreCompileInputs.cache
 E:\git_toyshop\toyshop\toyshop\toyshop\obj\Debug\toyshop.exe
 E:\git_toyshop\toyshop\toyshop\toyshop\obj\Debug\toyshop.pdb
+=======
+E:\chuyen di cntt 2017\cong nghe phan mem\git_toyshop\toyshop\toyshop\obj\Debug\toyshop.Gioithieu.resources
+E:\chuyen di cntt 2017\cong nghe phan mem\git_toyshop\toyshop\toyshop\bin\Debug\DevExpress.BonusSkins.v17.1.dll
+E:\chuyen di cntt 2017\cong nghe phan mem\git_toyshop\toyshop\toyshop\obj\Debug\toyshop.report.frm_RP_Baocao.resources
+E:\chuyen di cntt 2017\cong nghe phan mem\git_toyshop\toyshop\toyshop\obj\Debug\toyshop.report.rp_bc_all_phieunhap.resources
+>>>>>>> a098b6266b3de8fd22f6ba348a83396bbdae4c36
+E:\git_toyshop\toyshop\toyshop\toyshop\bin\Debug\DevExpress.BonusSkins.v17.1.dll
+E:\git_toyshop\toyshop\toyshop\toyshop\obj\Debug\toyshop.Gioithieu.resources
+E:\git_toyshop\toyshop\toyshop\toyshop\obj\Debug\toyshop.report.frm_RP_Baocao.resources
+E:\git_toyshop\toyshop\toyshop\toyshop\obj\Debug\toyshop.report.rp_bc_all_phieunhap.resources

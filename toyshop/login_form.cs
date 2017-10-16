@@ -1,5 +1,6 @@
 ﻿using DevExpress.XtraEditors;
 using System;
+using System.Threading;
 using System.Windows.Forms;
 using toyshop.Data;
 
@@ -12,6 +13,7 @@ namespace toyshop
         public login_form()
         {
             InitializeComponent();
+            Thread.Sleep(1000);
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -45,6 +47,14 @@ namespace toyshop
             
         }
 
-       
+     
+
+        private void tbPassword_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Convert.ToInt32(e.KeyChar) == 13)
+            {
+                btnOK_Click(null, null);
+            }
+        }
     }
 }
