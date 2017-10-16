@@ -10,17 +10,23 @@ using System.Windows.Forms;
 using DevExpress.XtraBars;
 using toyshop.Data;
 using DevExpress.XtraEditors;
+using DevExpress.XtraSplashScreen;
+using System.Threading;
 
 namespace toyshop
 {
    
     public partial class frmMain : DevExpress.XtraBars.Ribbon.RibbonForm
     {
+        
         public nhanvien nv = new nhanvien();
        
         public frmMain()
         {
+           
             InitializeComponent();
+            Thread.Sleep(1000);
+            ribbon.Minimized=true;
             nv.id = 1; 
             nv.username = "A";
             nv.hoten = "B";

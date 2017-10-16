@@ -45,6 +45,14 @@ namespace toyshop
             
         }
 
-       
+     
+
+        private void tbPassword_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Convert.ToInt32(e.KeyChar) == 13)
+            {
+                btnOK_Click(null, null);
+            }
+        }
     }
 }

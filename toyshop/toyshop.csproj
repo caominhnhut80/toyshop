@@ -32,6 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Charts.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.CodeParser.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -103,6 +104,12 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Gioithieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gioithieu.Designer.cs">
+      <DependentUpon>Gioithieu.cs</DependentUpon>
+    </Compile>
     <Compile Include="login_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gioithieu.resx">
+      <DependentUpon>Gioithieu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login_form.resx">
       <DependentUpon>login_form.cs</DependentUpon>
@@ -236,6 +246,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\stock-vector-two-gold-dollar-signs-eps-cmyk-organized-by-layers-global-colors-gradients-used-225399136.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bupbe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bupbe2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bupbe3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bupbe4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nhut.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\nhut50.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\nhut100.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\nhut75.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\khiem.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\hieu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\phung.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\phung1111.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\thong111.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\thong2222.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
